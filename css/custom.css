@@ -1,0 +1,35 @@
+    
+td.sorting::after{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f0dc";
+    float: right;
+}
+    
+td.sorting_asc::after{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f0de";
+    float: right;
+}
+    
+    
+td.sorting_desc::after{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f0dd";
+    float: right;
+}    
+
+input{
+    border: 1px solid #dee2e6;
+}
+    
+.pull-left{
+    float: left;
+}
+
+
+.pull-rigth{
+    float: right;
+}

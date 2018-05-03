@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSVHTML</title>
+    <meta name="author" content="TurkishTinMan">
+
+    <!-- Bootstrap 4 core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/datatable.min.css" rel="stylesheet">
+    <link href="fontawesome/css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="icon" href="images/app.jpg">      
+  </head>
+
+  <body>
+    <div class="container-fluid">
+
+      <h2>CSV to HTML</h2>
+
+      <p>Dataset from <a href='https://github.com/StephanieStallworth/Exploratory_Data_Analysis_Visualization_Python/blob/master/DemographicData.csv'>Link</a>.</p>
+      
+      <div id='table'></div>
+
+    </div><!-- /.container -->
+
+    <footer class='footer'>
+      <div class='container-fluid'>
+        <hr />
+          <p class="pull-left"><a href="https://creativecommons.org/licenses/by-nd/4.0/">Licence <i class="fab fa-creative-commons"></i></a></p>  
+        <p class="pull-rigth"><a href=''>CSV to HTML Table</a> by <a href='http://riccardosalladini.com'>Riccardo Salladini</a></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/datatable.min.js"></script>
+    <script type="text/javascript" src="js/csvtotable.js"></script>
+      
+
+
+    <script type="text/javascript">
+        $( document ).ready(function() {
+              CsvToHtml.boot({
+                csv_path: 'data/DemographicData.csv', 
+                element: 'table', 
+                paging:false,
+                ordering:false,
+                datatableoption:'{paging:true,ordering:true}',
+              });
+        });
+
+        
+    </script>
+  </body>
+</html>
