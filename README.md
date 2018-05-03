@@ -2,7 +2,7 @@
 
 Display a csv file in an html table  
 
-#Usage  
+## Usage  
 ```
 CsvToHtml.boot({
     csv_path: 'data/DemographicData.csv', 
@@ -19,7 +19,7 @@ paging: 'true/false of the paging (default:true)'
 ordering: 'true/false of the ordering (default:true)'  
 datatableoption: 'other option to feed the datatable function'  
 
-#Link  
+## Link  
 
 [idea](https://github.com/derekeder/csv-to-html-table)  
 [font awesome](https://fontawesome.com/)  
